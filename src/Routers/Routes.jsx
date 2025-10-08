@@ -23,7 +23,8 @@ import Installation from '../pages/Installation';
         },
         {
           path:'/apps',
-          element:<AllApps></AllApps>
+          element:<AllApps></AllApps>,
+          loader:appsLoader
         },
         {
           path:'/installation',

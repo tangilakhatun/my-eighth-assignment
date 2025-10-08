@@ -58,7 +58,7 @@ const Home = () => {
         </section>
 
         <section className='max-w-[1400px] mx-auto mt-12'>
-            <div className='grid grid-cols-4 space-y-3 gap-3'>
+            <div className='grid items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-3 gap-3'>
                 {
                     eightApps.map(app =><Appcard key={app.id} app={app}></Appcard>)
                 }
@@ -66,6 +66,11 @@ const Home = () => {
             </div>
 
         </section>
+        <div className='max-w-[1400px] flex justify-center mx-auto mt-20'>
+ <button className='bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold px-[30px]
+         py-[12px] rounded-sm'>Show All</button>
+        </div>
+       
 </section>
 
 

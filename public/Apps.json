@@ -1,0 +1,219 @@
+
+ [
+  {
+    "image": "https://i.ibb.co.com/yFPrxh8s/taskmaster.webp",
+    "title": "TaskMaster",
+    "companyName": "Prodify",
+    "id": 1,
+    "description": "TaskMaster is a comprehensive task management app designed to help you organize your personal and professional life efficiently. Create, track, and prioritize your tasks, set reminders, and achieve your goals without missing a beat. Perfect for students, professionals, and busy individuals.",
+    "size": 24,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 250000,
+    "ratings": [
+      {"name":"1 star", "count":50},
+      {"name":"2 star", "count":30},
+      {"name":"3 star", "count":120},
+      {"name":"4 star", "count":400},
+      {"name":"5 star", "count":600}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/n8g7WZfV/fitTrack.webp",
+    "title": "FitTrack",
+    "companyName": "HealthCo",
+    "id": 2,
+    "description": "FitTrack helps you monitor your workouts, track calories, and measure your fitness progress with ease. Whether you are trying to lose weight, build muscle, or maintain a healthy lifestyle, FitTrack provides insightful analytics, motivational reminders, and easy-to-follow plans to keep you on track every day.",
+    "size": 30,
+    "reviews": 800,
+    "ratingAvg": 4.2,
+    "downloads": 180000,
+    "ratings": [
+      {"name":"1 star", "count":40},
+      {"name":"2 star", "count":20},
+      {"name":"3 star", "count":100},
+      {"name":"4 star", "count":300},
+      {"name":"5 star", "count":340}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RGrm5wQ0/tal.webp",
+    "title": "Talkie",
+    "companyName": "Comms Inc",
+    "id": 3,
+    "description": "Talkie is a secure and user-friendly messaging app that keeps your conversations private and simple. Send messages, share media, and connect with friends and family safely. With end-to-end encryption and an intuitive interface, Talkly ensures your communication is fast, reliable, and secure.",
+    "size": 45,
+    "reviews": 540,
+    "ratingAvg": 4.7,
+    "downloads": 320000,
+    "ratings": [
+      {"name":"1 star", "count":10},
+      {"name":"2 star", "count":15},
+      {"name":"3 star", "count":50},
+      {"name":"4 star", "count":180},
+      {"name":"5 star", "count":285}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Lz3DDSvw/p.webp",
+    "title": "PhotoFlow",
+    "companyName": "SnapSoft",
+    "id": 4,
+    "description": "PhotoFlow provides professional-level photo editing tools for everyone. Enhance your photos with filters, retouch images, adjust colors, and create stunning visual content effortlessly. Ideal for photographers, social media enthusiasts, and anyone who wants to bring their photos to life.",
+    "size": 60,
+    "reviews": 2200,
+    "ratingAvg": 4.3,
+    "downloads": 510000,
+    "ratings": [
+      {"name":"1 star", "count":150},
+      {"name":"2 star", "count":80},
+      {"name":"3 star", "count":300},
+      {"name":"4 star", "count":800},
+      {"name":"5 star", "count":870}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1fSnt5rF/baget-bubly.webp",
+    "title": "Budget Buddy",
+    "companyName": "FinanceX",
+    "id": 5,
+    "description": "Budget Buddy is your personal finance assistant that makes managing money simple and stress-free. Track your expenses, create budgets, and plan your savings effectively. With insightful reports and easy-to-use tools, Budget Buddy helps you take control of your finances and achieve your financial goals.",
+    "size": 18,
+    "reviews": 410,
+    "ratingAvg": 4.0,
+    "downloads": 90000,
+    "ratings": [
+      {"name":"1 star", "count":20},
+      {"name":"2 star", "count":30},
+      {"name":"3 star", "count":100},
+      {"name":"4 star", "count":150},
+      {"name":"5 star", "count":110}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bMfnxcTQ/larnlang.webp",
+    "title": "LearnLang",
+    "companyName": "EduLabs",
+    "id": 6,
+    "description": "LearnLang helps you master new languages quickly through micro-lessons and interactive exercises. Build vocabulary, practice speaking, and improve grammar at your own pace. Perfect for travelers, students, or anyone looking to expand their language skills in a fun and engaging way.",
+    "size": 55,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 430000,
+    "ratings": [
+      {"name":"1 star", "count":30},
+      {"name":"2 star", "count":25},
+      {"name":"3 star", "count":140},
+      {"name":"4 star", "count":400},
+      {"name":"5 star", "count":905}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BHG4xNGw/cocomat.webp",
+    "title": "CookMate",
+    "companyName": "KitchenLab",
+    "id": 7,
+    "description": "CookMate provides easy-to-follow recipes and meal plans for busy people. Discover new dishes, plan weekly meals, and manage grocery lists effortlessly. Whether you are a beginner or an experienced cook, CookMate helps you save time in the kitchen while enjoying delicious meals.",
+    "size": 22,
+    "reviews": 320,
+    "ratingAvg": 3.9,
+    "downloads": 76000,
+    "ratings": [
+      {"name":"1 star", "count":40},
+      {"name":"2 star", "count":35},
+      {"name":"3 star", "count":120},
+      {"name":"4 star", "count":80},
+      {"name":"5 star", "count":45}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4RfgnzxJ/notap.webp",
+    "title": "NoteSphere",
+    "companyName": "NoteWorks",
+    "id": 8,
+    "description": "NoteSphere is a modern note-taking app that keeps all your thoughts, ideas, and tasks in one place. Sync notes across devices, organize them with tags, and collaborate with others easily. Ideal for students, professionals, and anyone who needs to stay organized and productive.",
+    "size": 15,
+    "reviews": 870,
+    "ratingAvg": 4.4,
+    "downloads": 210000,
+    "ratings": [
+      {"name":"1 star", "count":25},
+      {"name":"2 star", "count":20},
+      {"name":"3 star", "count":90},
+      {"name":"4 star", "count":300},
+      {"name":"5 star", "count":435}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RpSvkj6X/mo.webp",
+    "title": "MapWay",
+    "companyName": "GeoSoft",
+    "id": 9,
+    "description": "MapWay helps you navigate smarter and discover local spots quickly. With detailed maps, real-time traffic updates, and recommendations for restaurants, cafes, and attractions, MapWay makes exploring your city or traveling a breeze. Never get lost and find the best places effortlessly.",
+    "size": 80,
+    "reviews": 1340,
+    "ratingAvg": 4.1,
+    "downloads": 270000,
+    "ratings": [
+      {"name":"1 star", "count":100},
+      {"name":"2 star", "count":60},
+      {"name":"3 star", "count":200},
+      {"name":"4 star", "count":400},
+      {"name":"5 star", "count":580}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yCXrGKG/kids.webp",
+    "title": "KidsPlay",
+    "companyName": "HappyApps",
+    "id": 10,
+    "description": "KidsPlay offers a safe and fun environment for children to play games and learn new skills. With educational games, interactive stories, and age-appropriate content, kids can enjoy screen time while parents feel secure knowing their child is in a safe digital space.",
+    "size": 40,
+    "reviews": 460,
+    "ratingAvg": 4.8,
+    "downloads": 600000,
+    "ratings": [
+      {"name":"1 star", "count":5},
+      {"name":"2 star", "count":8},
+      {"name":"3 star", "count":20},
+      {"name":"4 star", "count":120},
+      {"name":"5 star", "count":307}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q37nMZ0m/slep.webp",
+    "title": "SleepWell",
+    "companyName": "DreamLabs",
+    "id": 11,
+    "description": "SleepWell is designed to improve your sleep quality with soothing sounds, bedtime stories, and sleep tracking features. Monitor your sleep patterns, relax before bedtime, and wake up refreshed and energized every day. Perfect for anyone looking to get better rest naturally.",
+    "size": 12,
+    "reviews": 310,
+    "ratingAvg": 4.0,
+    "downloads": 115000,
+    "ratings": [
+      {"name":"1 star", "count":10},
+      {"name":"2 star", "count":12},
+      {"name":"3 star", "count":50},
+      {"name":"4 star", "count":120},
+      {"name":"5 star", "count":118}
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/G4jWbdh0/dail.webp",
+    "title": "DailyNews",
+    "companyName": "MediaCorp",
+    "id": 12,
+    "description": "DailyNews delivers personalized news tailored to your interests. Stay updated on current events, trending topics, and stories that matter to you. With a clean interface and customizable categories, DailyNews ensures you never miss important updates while keeping your reading experience smooth and engaging.",
+    "size": 25,
+    "reviews": 980,
+    "ratingAvg": 3.8,
+    "downloads": 98000,
+    "ratings": [
+      {"name":"1 star", "count":60},
+      {"name":"2 star", "count":80},
+      {"name":"3 star", "count":200},
+      {"name":"4 star", "count":300},
+      {"name":"5 star", "count":340}
+    ]
+  }
+]

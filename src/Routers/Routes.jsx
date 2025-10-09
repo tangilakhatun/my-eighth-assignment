@@ -6,6 +6,7 @@ import ErrorPage from '../pages/ErrorPage';
 import Home from '../pages/Home';
 import AllApps, { appsLoader } from '../pages/AllApps'
 import Installation from '../pages/Installation';
+import AppDetails, { appLoader } from '../pages/AppDetails';
 
 
 
@@ -29,8 +30,12 @@ import Installation from '../pages/Installation';
         {
           path:'/installation',
           element:<Installation></Installation>
-        }
-        
+        },
+        {
+          path:'/appDetails/:id',
+          element:<AppDetails></AppDetails>,
+          loader:appLoader
+        },
     ]
   },
 ]);

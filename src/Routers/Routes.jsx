@@ -29,7 +29,8 @@ import AppDetails, { appLoader } from '../pages/AppDetails';
         },
         {
           path:'/installation',
-          element:<Installation></Installation>
+          element:<Installation></Installation>,
+          loader:appsLoader
         },
         {
           path:'/appDetails/:id',

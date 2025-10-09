@@ -2,7 +2,7 @@ import React from 'react';
 import playstorImg from "../assets/play stor.png";
 import appImg from '../assets/app.png';
 import heroImg from '../assets/hero.png';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import Appcard from '../Component/AppCard';
 
 const Home = () => {
@@ -17,11 +17,13 @@ const Home = () => {
 <div className='flex justify-center gap-4 mt-10 flex-col sm:flex-row'>
     <div className='flex btn '>
         <img className='' src={playstorImg} alt="" />
-<button className='text-[20px] font-semibold'> Google Play</button>
+        <a href="https://play.google.com/store/games?hl=en"><button className='text-[20px] font-semibold'> Google Play</button></a>
+
     </div>
     <div className='flex btn'>
         <img src={appImg} alt="" />
-<button className='text-[20px] font-semibold'>App Store </button>
+        <a href="https://www.apple.com/app-store/"><button className='text-[20px] font-semibold'>App Store </button></a>
+
     </div>
 </div>
           <div className='mt-10 '>
@@ -66,10 +68,13 @@ const Home = () => {
             </div>
 
         </section>
-        <div className='max-w-[1400px] flex justify-center mx-auto mt-20'>
+        <Link to='/apps'>
+        <div className='max-w-[1400px] flex justify-center mx-auto mt-20 '>
  <button className='bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold px-[30px]
          py-[12px] rounded-sm'>Show All</button>
         </div>
+        </Link>
+        
        
 </section>
 

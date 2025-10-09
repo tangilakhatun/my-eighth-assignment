@@ -3,7 +3,8 @@ import { useLoaderData } from 'react-router';
 import starImg from '../assets/star.png';
 import downloadImg from '../assets/dounlod.png'
 import rightImg from '../assets/right.png'
-
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { ToastContainer,toast } from 'react-toastify';
 
 
 export async function appLoader({params}){
@@ -38,9 +39,15 @@ const AppDetails = () => {
       installedApps.push(app.id);
       localStorage.setItem("installedApps", JSON.stringify(installedApps));
       setInstalled(true);
+      toast("Succsesfully installed")
     
     }
   }
+
+  function prepareChartData(){
+    
+    return app.ratings.map(r => ({name: r.name, count: r.count}));}
+
     return (
        <div className="max-w-[1400px] mx-auto mt-[80px] ">
       <div className="flex flex-col md:flex-row gap-40">
@@ -75,12 +82,31 @@ const AppDetails = () => {
       </div>
  <hr className=' border-1 border-gray-300 mt-10 mb-10' />
 
- 
-      <section className="description">
-        <h3>Description</h3>
-        <p>{app.description}</p>
+<section className="chart">
+  <h3 className='text-[24px] font-semibold text-[#001931]'>Ratings</h3>
+  <ResponsiveContainer width="100%" height={250}>
+    <BarChart 
+      data={prepareChartData().reverse()} 
+      layout="vertical"
+    >
+      <XAxis type="number" />
+      <YAxis dataKey="name" type="category" />
+      <Tooltip />
+      <Bar 
+        dataKey="count" 
+        fill="#FFA500"
+        radius={[0, 10, 10, 0]} 
+      />
+    </BarChart>
+  </ResponsiveContainer>
+</section>
+
+  <hr className=' border-1 border-gray-300 mt-10 mb-10' />
+      <section className='mt-7 mb-12'>
+        <h3 className='text-[24px] font-semibold text-[#001931]'>Description</h3>
+        <p className='text-[#627382] text-[20px]'>{app.description}</p>
       </section>
-      
+        <ToastContainer />
     </div>
     );
 };

@@ -38,7 +38,7 @@ const Header = () => {
   </div>
   <div className="navbar-end">
    
- <a className="btn bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold "> <Github /> Contribute</a>
+ <a href='https://github.com/tangilakhatun' className="btn bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold "> <Github /> Contribute</a>
    
   </div>
 </div>

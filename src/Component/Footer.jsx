@@ -3,7 +3,7 @@ import logoImg from '../assets/logo.png'
 
 const Footer = () => {
     return (
-        <div className='bg-[#001931]  text-neutral-content p-10' >
+        <div className='bg-[#001931]  text-neutral-content p-10 mt-10' >
         <footer className=" footer md:footer-horizontal max-w-[1400px] mx-auto">
                 <nav>
                     <div className='flex gap-2 justify-center items-center '>

@@ -9,7 +9,7 @@ const AppCard = ({app}) => {
     return (
         <div>
  <Link to={`/appDetails/${app.id}`}>
-            <div className="app-card" onClick={()=>navigate(`/app/${app.id}`)}>
+            <div  onClick={()=>navigate(`/app/${app.id}`)}>
       <div className="card bg-base-100 w-80 shadow-xl">
   <figure className="px-2 pt-4">
     <img

@@ -1,5 +1,8 @@
 import React from 'react';
 import logoImg from '../assets/logo.png'
+import xImg from '../assets/x.png'
+import inImg from '../assets/rx.png'
+import facImg from '../assets/f.png'
 
 const Footer = () => {
     return (
@@ -25,6 +28,16 @@ const Footer = () => {
     <a className="link link-hover text-[#A1A1AA]">Customer Stories</a>
     <a className="link link-hover text-[#A1A1AA]">Download Apps</a>
 
+  </nav>
+  <nav >
+    <h6 className="font-medium text-[20px] text-white">Social Links</h6>
+    <div className='flex gap-2'>
+<a className="link link-hover text-[#A1A1AA]"> <div className='flex gap-2'> <img src={xImg} alt="" /> </div></a>
+    <a className="link link-hover text-[#A1A1AA]"> <div className='flex gap-2'> <img src={inImg} alt="" /> </div></a>
+    <a className="link link-hover text-[#A1A1AA] "> <div className='flex gap-2 '><img src={facImg} alt="" /></div></a>
+    </div>
+    
+    
   </nav>
   </footer>
 <hr className='border-b-0.1 border-gray-700 mt-[80px]  mx-auto max-w-[1400px]' />

@@ -17,28 +17,29 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <NavLink className='text-[#632EE3]' to='/'> Home</NavLink> 
-      <NavLink to='/apps'> Apps</NavLink> 
-      <NavLink to='/installation'> Installation</NavLink> 
+        <NavLink end className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] pb-1 text-[20px] font-bold' : 'text-[20px] font-bold'} to='/'> Home</NavLink> 
+      <NavLink to='/apps'  className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] pb-1 text-[20px] font-bold' : 'text-[20px] font-bold'}> Apps</NavLink> 
+      <NavLink to='/installation'  className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] pb-1 text-[20px] font-bold' : 'text-[20px] font-bold'}> Installation</NavLink> 
       </ul>
     </div>
-    <div className='flex'>
-      <img className='h-[40px] w-[40px]' src={logoImg} alt="" />
-<a className="btn btn-ghost text-xl text-[#632EE3]">HERO.IO</a>
+    <div className='flex justify-center items-center'>
+      <img className='h-[25px] w-[25px] sm:h-[40px] sm:w-[40px]' src={logoImg} alt="" />
+<a className="btn btn-ghost text-sm md:text-base lg:text-lg  font-bold text-[#632EE3]">HERO.IO</a>
     </div>
     
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <NavLink className='text-[#632EE3] mr-3 font-semibold' to='/'> Home</NavLink> 
-      <NavLink className='mr-3 font-semibold' to='/apps'> Apps</NavLink> 
-      <NavLink className='mr-2 font-semibold' to='/installation'> Installation</NavLink> 
       
+       <NavLink end className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] text-[20px] font-bold mr-3 pb-1' : 'text-[20px] font-bold mr-3'} to='/'> Home</NavLink> 
+      <NavLink to='/apps'  className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] text-[20px] font-bold pb-1 mr-3' : 'text-[20px] font-bold mr-3'}> Apps</NavLink> 
+      <NavLink to='/installation'  className={({isActive}) => isActive ? 'text-[#632EE3] border-b-2 border-[#632EE3] text-[20px] font-bold mr-2 pb-1' : 'text-[20px] mr-2 font-bold'}> Installation</NavLink> 
     </ul>
   </div>
   <div className="navbar-end">
    
- <a href='https://github.com/tangilakhatun' className="btn bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold "> <Github /> Contribute</a>
+ <a href='https://github.com/tangilakhatun' className="btn p-2 text-sm md:text-base lg:text-lg bg-linear-to-b from-[#632EE3] to-[#9F62F2] 
+  text-white font-semibold transform transition duration-300  hover:scale-105"> <Github /> Contribute</a>
    
   </div>
 </div>

@@ -54,7 +54,7 @@ const AppDetails = () => {
         <img src={app.image} alt={app.title} className='rounded-md' />
         <div className=" max-w-[1050px] ">
           <h2 className='text-[32px] text-[#001931] font-bold '>{app.title}</h2>
-          <p className='text-[20px] '> Company by:<span className='text-[#632EE3] font-medium'>{app.companyName}</span></p>
+          <p className='text-[20px] '> developed by:<span className='text-[#632EE3] font-medium'>{app.companyName}</span></p>
           <hr className='border-b-1 border-gray-300 mt-4 ' />
 <div className='flex md:flex-row flex-col mt-10 justify-between  gap-12'>
     <div className=' flex flex-col justify-center items-center'>

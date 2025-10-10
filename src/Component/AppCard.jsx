@@ -10,12 +10,12 @@ const AppCard = ({app}) => {
         <div>
  <Link to={`/appDetails/${app.id}`}>
             <div  onClick={()=>navigate(`/app/${app.id}`)}>
-      <div className="card bg-base-100 w-80 shadow-xl">
+      <div className="card bg-base-100 transform transition duration-300 hover:scale-105 m-3 shadow-xl">
   <figure className="px-2 pt-4">
     <img
       src={app.image}
       alt=""
-      className="rounded-3xl w-[300px] h-[300px]" />
+      className="rounded-3xl mx-auto w-[250px] h-[240px]" />
   </figure>
   
     <h2 className="card-title mt-3 ml-3">{app.title}</h2>

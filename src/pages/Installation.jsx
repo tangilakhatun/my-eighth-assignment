@@ -7,8 +7,8 @@ import starImg from '../assets/star.png'
 
 const Installation = () => {
   const apps = useLoaderData() || [];
-  const [installedAppIds, setInstalledAppIds] = useState([]); // boro name
-  const [sortBy, setSortBy] = useState(""); // Sort state
+  const [installedAppIds, setInstalledAppIds] = useState([]); 
+  const [sortBy, setSortBy] = useState(""); 
 
   useEffect(() => {
     const installedAppIds = JSON.parse(localStorage.getItem("installedApps") || "[]");
@@ -20,13 +20,13 @@ const Installation = () => {
     installedAppIds = installedAppIds.filter(x => x !== id);
     localStorage.setItem("installedApps", JSON.stringify(installedAppIds));
     setInstalledAppIds(installedAppIds);
-    toast.info("App uninstalled");
+    toast("App uninstalled");
   }
 
-  // Filter installed apps
+ 
   let installedData = apps.filter(a => installedAppIds.includes(a.id));
 
-  // Sort installed apps based on sortBy
+ 
   if(sortBy === "az") {
     installedData.sort((a,b) => a.title.localeCompare(b.title));
   } else if(sortBy === "za") {
@@ -43,18 +43,18 @@ const Installation = () => {
         <div>
              {installedData.length > 0 && (
         <div style={{ marginBottom: "1rem" }}>
-          <label>Sort: </label>
+          <label className='input mt-6'>
           <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
-            <option value="">Default</option>
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
+            <option value="">Sort By Size</option>
+            <option value="az">high-low</option>
+            <option value="az">low-high</option>
           </select>
+          </label>
         </div>
       )}
         </div>
       </div>
 
-     
 
       {installedData.length === 0 ? (
         <p>No installed apps yet.</p>
@@ -62,7 +62,7 @@ const Installation = () => {
         <div className="grid-3">
           {installedData.map(app => (
             <div key={app.id} className="">
-                <div className='bg-white flex flex-col sm:flex-row justify-between rounded-2xl shadow-xl mt-7 mb-6 items-center'>
+                <div className='bg-white flex flex-col sm:flex-row justify-between rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105 mt-7 mb-6 items-center'>
                     <div className='flex'> 
                         <img className='w-30 h-30 p-4 rounded-2xl' src={app.image} alt={app.title} />
               <div>
@@ -82,7 +82,7 @@ const Installation = () => {
                 </div>
               </div>
                     </div>
-                    <button className='bg-[#00D390] btn mr-3 px-5 text-white' onClick={() => handleUninstall(app.id)}>Uninstall</button>
+                    <button className='bg-[#00D390] btn mr-3 px-5 mb-3 text-white' onClick={() => handleUninstall(app.id)}>Uninstall</button>
                 </div>
               
               

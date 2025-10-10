@@ -15,12 +15,12 @@ const Home = () => {
             <h1 className='text-5xl font-bold text-center text-[#001931] '>We Build <br /> <span className='text-[#632EE3]'>Productive</span>Apps</h1>
             <p className='text-[#627382] text-[20px] mt-6 text-center'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 <div className='flex justify-center gap-4 mt-10 flex-col sm:flex-row'>
-    <div className='flex btn '>
+    <div className='flex btn transform transition duration-300 hover:scale-105 '>
         <img className='' src={playstorImg} alt="" />
         <a href="https://play.google.com/store/games?hl=en"><button className='text-[20px] font-semibold'> Google Play</button></a>
 
     </div>
-    <div className='flex btn'>
+    <div className='flex btn transform transition duration-300 hover:scale-105'>
         <img src={appImg} alt="" />
         <a href="https://www.apple.com/app-store/"><button className='text-[20px] font-semibold'>App Store </button></a>
 
@@ -36,19 +36,19 @@ const Home = () => {
             <div className='flex sm:flex-row flex-col justify-center gap-20 p-[80px]'>
                 <div className='text-center'>
                     <p className='text-white'>Total Downloads</p>
-                    <h1 className='text-[64px] font-extrabold text-white'>29.6M</h1>
+                    <h1 className='sm:text-[64px] text-[50px] font-extrabold text-white'>29.6M</h1>
                     <p className='text-white'>21% more than last month</p>
 
                 </div>
                  <div>
                     <p className='text-white'>Total Reviews</p>
-                    <h1 className='text-[64px] font-extrabold text-white'>906K</h1>
+                    <h1 className='sm:text-[64px] text-[50px] font-extrabold text-white'>906K</h1>
                     <p className='text-white'>46% more than last month</p>
 
                 </div>
                  <div>
                     <p className='text-white'>Active Apps</p>
-                    <h1 className='text-[64px] font-extrabold text-white'>132+</h1>
+                    <h1 className='sm:text-[64px] text-[50px] font-extrabold text-white'>132+</h1>
                     <p className='text-white'>31 more will Launch</p>
 
                 </div>

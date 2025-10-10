@@ -1,16 +1,22 @@
-# React + Vite
+App Name : App Galaxy – Explore Install & Manage Your Favorite Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Description:
+App Galaxy is a modern web-based platform that showcases a wide collection of apps in one place.Users can browse through multiple apps,search for their favorite apps in real-time,and view detailed information such as app size,ratings,and usage stats.The platform allows users to install or uninstall apps with a smooth experience,all managed through localStorage for convenience.
 
-## React Compiler
+Designed with React and Tailwind CSS,App Galaxy features a responsive layout,interactive charts,and custom loading animations providing a fast,user-friendly,and visually appealing experience.Whether you want to explore top apps or manage your installed apps efficiently,App Galaxy makes it simple and enjoyable.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technologies Used:
 
-## Expanding the ESLint configuration
+1. Vite + React Router DOM – fast development and routing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Tailwind CSS – responsive,utility-first styling
+
+3. Recharts – interactive charts for ratings visualization
+
+4. LocalStorage – manage installed apps persistently
+
+5. React Toastify – clean toast notifications
+
+6 Netlify – for deployment

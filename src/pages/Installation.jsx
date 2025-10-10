@@ -26,12 +26,11 @@ const Installation = () => {
  
   let installedData = apps.filter(a => installedAppIds.includes(a.id));
 
- 
-  if(sortBy === "az") {
-    installedData.sort((a,b) => a.title.localeCompare(b.title));
-  } else if(sortBy === "za") {
-    installedData.sort((a,b) => b.title.localeCompare(a.title));
-  }
+  if (sortBy === "high") {
+  installedData.sort((a, b) => b.downloads - a.downloads);
+} else if (sortBy === "low") {
+  installedData.sort((a, b) => a.downloads - b.downloads);
+}
 
   return (
     <section className='max-w-[1400px] mx-auto mt-[80px]'>
@@ -46,8 +45,8 @@ const Installation = () => {
           <label className='input mt-6'>
           <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
             <option value="">Sort By Size</option>
-            <option value="az">high-low</option>
-            <option value="az">low-high</option>
+            <option value="high">Download high</option>
+            <option value="low"> Download low</option>
           </select>
           </label>
         </div>

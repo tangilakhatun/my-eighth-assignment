@@ -51,7 +51,7 @@ const AppDetails = () => {
     return (
        <div className="max-w-[1400px] mx-auto mt-[80px] ">
       <div className="flex flex-col md:flex-row gap-40">
-        <img src={app.image} alt={app.title} className='rounded-md' />
+        <img  src={app.image} alt={app.title} className='rounded-md m-3' />
         <div className=" max-w-[1050px] ">
           <h2 className='text-[32px] text-[#001931] font-bold '>{app.title}</h2>
           <p className='text-[20px] '> developed by:<span className='text-[#632EE3] font-medium'>{app.companyName}</span></p>
@@ -76,7 +76,12 @@ const AppDetails = () => {
 
           
           <button className='bg-[#00D390] px-[20px] py-[14px] rounded-sm text-white' disabled={installed} onClick={handleInstall}> 
-            {installed ? "Installed" : "Install Now "}
+            {installed ? "Installed" : (
+    <>
+      Install Now
+      <span className='ml-1'>({app.size} MB)</span>
+    </>
+  )}
           </button>
         </div>
       </div>

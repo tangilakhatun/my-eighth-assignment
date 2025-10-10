@@ -70,7 +70,7 @@ const Home = () => {
         </section>
         <Link to='/apps'>
         <div className='max-w-[1400px] flex justify-center mx-auto mt-20 '>
- <button className='bg-linear-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold px-[30px]
+ <button className='bg-linear-to-b from-[#632EE3] to-[#9F62F2] transform transition duration-300  hover:scale-105 text-white font-semibold px-[30px]
          py-[12px] rounded-sm'>Show All</button>
         </div>
         </Link>
